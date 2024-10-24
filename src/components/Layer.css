@@ -1,0 +1,84 @@
+.layer-block {
+    padding: 16px;
+    margin: 4px;
+    background-color: #6a5acd;
+    /* SlateBlue */
+    color: white;
+    border-radius: 4px;
+    cursor: move;
+    transition: transform 0.2s;
+    /* Smooth scaling */
+    text-align: center;
+    /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+}
+
+.layer {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+}
+
+.layer h4 {
+    margin: 0 0 10px 0;
+}
+
+.layer-params {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layer-params label {
+    font-size: 12px;
+    color: #666;
+}
+
+.layer-params input {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+.layer {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    min-width: 150px;
+    cursor: move;
+}
+
+.connector {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input-connector {
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.output-connector {
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.connector:hover {
+    background: #333;
+}
